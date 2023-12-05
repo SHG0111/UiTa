@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="./src/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./src/assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="./src/assets/css/slick.css" rel="stylesheet">
+  <link href="./src/assets/css/slick-theme.css" rel="stylesheet">
+  <link href="./src/assets/css/iconmoon.css" rel="stylesheet">
+  <link href="./src/assets/css/main.css" rel="stylesheet">
+
+  <title>UI task</title>
+</head>
+
+<body>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!-- ////////////////////////// -->
+  <!-- navbar -->
+  <!-- ////////////////////////// -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand mx-0" href="#">
+        <img src="src/assets/images/companyLogo.svg" alt="" width="70" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">المزادات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تواصل معنا</a>
+          </li>
+        </ul>
+        <a class="login-btn nav-link text-white d-flex align-items-center " href="#">
+          <span class="icon-user fs-2 px-1 pt-1"></span>
+          <span>تسجيل الدخول</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container-fluid px-lg-5 position-relative">
+      <div class="header-image">
+        <div class="text-white">
+          <h1 class="fw-bold">أضف سومتك وين ما كنت!</h1>
+          <p>منصة سومتك تجمع لك بين عرض العقارات أو المشاركة في المزاد اتسهلة وسريعة في بيئة إلكترونية موثوقة! </p>
+          <div class="bg-glass">
+            <div class="glass-imgs">
+
+              <img src="src/assets/images/image_48.svg">
+              <img src="src/assets/images/infath-logo_1.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ////////////////////////// -->
+  <!-- company logos section  -->
+  <!-- ////////////////////////// -->
+  <section class="companies text-center mt-5 container-fluid px-lg-5">
+    <h5 class="section-title">شركات المزادات</h5>
+    <div class=" mt-3 companies-slick">
+      <div class="company-logo  ">
+        <img src="src/assets/images/image_38-modified.svg">
+      </div>
+      <div class="company-logo  ">
+        <img src="src/assets/images/image_39-modified.svg">
+      </div>
+      <div class="company-logo ">
+        <img src="src/assets/images/image_40-modified_2.svg">
+      </div>
+      <div class="company-logo  ">
+        <img src="src/assets/images/image_41-modified.svg">
+      </div>
+      <div class="company-logo ">
+        <img src="src/assets/images/organizationLogo0857_2.svg">
+      </div>
+    </div>
+  </section>
+  <!-- ////////////////////////// -->
+  <!-- auctions section  -->
+  <!-- ////////////////////////// -->
+  <section class="auctions text-start mt-5 container-fluid px-lg-5">
+    <h5 class="section-title">المزادات</h5>
+    <div class="d-flex align-items-center justify-content-center mt-4">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button"
+            role="tab" aria-controls="pills-menu" aria-selected="true">القائمة</button>
+        </li>
+        <li class="nav-item " role="presentation">
+          <button class="nav-link active" id="pills-upcoming-tab" data-bs-toggle="pill" data-bs-target="#pills-upcoming"
+            type="button" role="tab" aria-controls="pills-upcoming" aria-selected="false">القادمة</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-finished-tab" data-bs-toggle="pill" data-bs-target="#pills-finished"
+            type="button" role="tab" aria-controls="pills-finished" aria-selected="false">المنتهي</button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content mt-4" id="pills-tabContent">
+      <div class="tab-pane fade " id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+      </div>
+      <div class="tab-pane fade show active " id="pills-upcoming" role="tabpanel" aria-labelledby="pills-upcoming-tab">
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card">
+              <div class="card-image">
+                <img src="src/assets/images/image_50.svg" class="card-img-top" alt="...">
+                <div class="location truncate-2 text-white px-3 py-1">
+                  <i class="icon-location"></i>
+                  <span>شارع الاخلاص - الدمام</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start justify-content-between mt-3">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عمارة سكنية الاندلس </h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <i class="icon-ruler"></i>
+                      &nbsp;
+                      <div class="fw-bold">325.22م²</div>
+                    </div>
+                  </div>
+                  <img src="src/assets/images/tharwa.png" class="company-logo" width="100px" alt="...">
+                </div>
+                <div class="d-flex align-items-center text-center justify-content-between  border">
+                  <div>
+                    <p class="mb-0 fw-bold">تاريخ فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">19/2/2023</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">وقت فتح المزاد</p>
+                    <p class="fw-bold font-bold mb-0">01:45 pm</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-3 ">
+                  <div>
+                    <h5 class="card-title m-0 truncate">عدد الاصول</h5>
+                    <div class="d-flex align-items-center ">
+                      <p class="fw-bold fs-4 font-bold text-secondary mb-0">71</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary border-0 btn-lg">تفاصيل المزاد</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-finished" role="tabpanel" aria-labelledby="pills-finished-tab">...</div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-4">
+      <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill fw-bold px-5 text-secondary">كل المزادات</a>
+
+    </div>
+  </section>
+  <!-- ////////////////////////// -->
+  <!-- footer -->
+  <!-- ////////////////////////// -->
+  <footer class="container-fluid px-lg-5 mt-5">
+    <div class="d-flex justify-content-between flex-wrap">
+      <div class="col-md-3">
+        <div class="footer-logo">
+          <a href="#"><img src="src/assets/images/Logo.svg" width="80px"></a>
+        </div>
+        <p class="mt-3">
+          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك ن تولد
+          مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى الموقع الالكترونى.
+        </p>
+        <div class="d-flex flex-nowrap align-items-center social-links mt-1">
+          <a class="text-decoration-none border border-2 rounded insta " target="_blank"
+            href="https://www.instagram.com/"><img src="src/assets/images/icons.social.svg"></a>
+          &nbsp;&nbsp;&nbsp;
+          <a class="text-decoration-none border border-2 rounded twitter " target="_blank"
+            href="https://www.twitter.com/"><img src="src/assets/images/twitter-x.svg"></a>
+          &nbsp;&nbsp;&nbsp;
+          <a class="text-decoration-none border border-2 rounded linkedin " target="_blank"
+            href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-links-list">
+          <h6>القائمة الرئيسية</h6>
+          <ul class="list-group list-group-flush mt-4">
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                الضوابط الإعلانية الصادرة من الهيئة
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                الشروط والأحكام
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                ترخيص الهيئة العامة للعقار
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                تواصل معنا
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-links-list">
+          <h6>الأقسام</h6>
+          <ul class="list-group list-group-flush mt-4">
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                مكتبة الدعم
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                الأسئلة الشائعة
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-links-list">
+          <h6>تواصل معنا</h6>
+          <ul class="list-group list-group-flush mt-4">
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                <i class="icon-map"></i>
+                الرياض حي الملك فيصل، السعودية
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                <i class="icon-call"></i>
+                <span dir="ltr">+966 570 212 216</span>
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a href="#" class="text-decoration-none">
+                <i class="icon-mail"></i>
+                <span dir="ltr">info@soum.tech</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr style="    color: #bababe;
+        border-top: 2px solid #bababe;">
+    <p style="    color: #aaabb1; font-size: 1rem; " class="mb-4">© جميع الحقوق محفوظة - لــ سومتك 2023</p>
+  </footer>
+
+  <!-- ////////////////////////// -->
+  <!-- scripts -->
+  <!-- ////////////////////////// -->
+  <script src="src/assets/js/jquery.min.js"></script>
+  <script src="src/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="src/assets/js/slick.min.js"></script>
+  <script>
+    //  page scroll indicator
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <script>
+    // slick carousel 
+    $(document).ready(function () {
+      $(".companies-slick").slick({
+        slidesToShow: 5,
+        dots: false,
+        rtl: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              autoplay: true,
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
