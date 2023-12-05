@@ -18,6 +18,10 @@
 </head>
 
 <body>
+  <div class="loader-container">
+
+    <div class="loader"></div>
+  </div>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
@@ -591,6 +595,7 @@
   <script>
     // slick carousel 
     $(document).ready(function () {
+      $('.loader-container').hide()
       $(".companies-slick").slick({
         slidesToShow: 5,
         dots: false,
