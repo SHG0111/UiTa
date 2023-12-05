@@ -594,9 +594,12 @@
   </script>
   <script>
     // slick carousel 
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelector(".loader-container").style.display = "none";
-    });
+    const hideLoader = () => {
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector(".loader-container").style.display = "none";
+      });
+    }
+    setTimeout(hideLoader() , 2000)
     //$('.loader-container').hide()
     $(document).ready(function () {
       $(".companies-slick").slick({
