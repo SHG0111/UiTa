@@ -594,8 +594,11 @@
   </script>
   <script>
     // slick carousel 
-    $(document).on('ready',(function () {
-      $('.loader-container').hide()
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector(".loader-container").style.display = "none";
+    });
+    //$('.loader-container').hide()
+    $(document).ready(function () {
       $(".companies-slick").slick({
         slidesToShow: 5,
         dots: false,
@@ -619,7 +622,7 @@
           }
         ]
       });
-    }));
+    });
 
   </script>
 
