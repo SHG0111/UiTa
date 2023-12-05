@@ -594,7 +594,7 @@
   </script>
   <script>
     // slick carousel 
-    $(document).ready(function () {
+    $(document).on('ready',(function () {
       $('.loader-container').hide()
       $(".companies-slick").slick({
         slidesToShow: 5,
@@ -619,7 +619,7 @@
           }
         ]
       });
-    });
+    }));
 
   </script>
 
